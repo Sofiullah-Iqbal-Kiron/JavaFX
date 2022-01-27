@@ -1,3 +1,6 @@
-Not a git repository.
+Git repository: master branch.
 
-Individual folders are individual projects.
+Individual folders are a individual project.
+
+Remote:
+
