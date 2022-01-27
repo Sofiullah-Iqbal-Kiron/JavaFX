@@ -3,4 +3,4 @@ Git repository: master branch.
 Individual folders are a individual project.
 
 Remote:
-
+origin: https://github.com/Sofiullah-Iqbal-Kiron/JavaFX.git
