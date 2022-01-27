@@ -1,0 +1,3 @@
+Not a git repository.
+
+Individual folders are individual projects.
