@@ -43,7 +43,7 @@ public class HelloApplication extends Application {
         transTransition.setCycleCount(Timeline.INDEFINITE);
 
         // Create an ImageView containing the Image
-        Image image = new Image("http://projavafx.com/images/earthrise.jpg");
+        Image image = new Image("https://images.unsplash.com/photo-1553272725-086100aecf5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1365&q=80");
         ImageView iv = new ImageView(image);
 
         // Create a ScrollPane containing the text
