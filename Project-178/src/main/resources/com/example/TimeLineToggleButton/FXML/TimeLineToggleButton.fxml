@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.text.Font?>
+
+
+<ToggleButton graphicTextGap="10.0" lineSpacing="1.0" mnemonicParsing="false" text="TimeLineToggleButton" textAlignment="CENTER" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <font>
+      <Font name="Consolas Bold" size="20.0" />
+   </font>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</ToggleButton>

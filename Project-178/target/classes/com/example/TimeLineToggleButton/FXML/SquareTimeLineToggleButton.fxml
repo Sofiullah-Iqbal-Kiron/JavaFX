@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<ToggleButton graphicTextGap="10.0" lineSpacing="1.0" mnemonicParsing="false" style="-fx-background-color: #c7f4f9;" text="SquareTimeLineToggleButton" textAlignment="CENTER" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+    <font>
+        <Font name="Consolas Bold" size="20.0" />
+    </font>
+    <padding>
+        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+    </padding>
+   <graphic>
+      <Rectangle fill="#93a1ae" height="25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="25.0" />
+   </graphic>
+</ToggleButton>

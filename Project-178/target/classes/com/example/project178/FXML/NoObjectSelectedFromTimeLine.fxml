@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<Text blendMode="MULTIPLY" fill="#160dc9" lineSpacing="4.0" stroke="#c0d4d7" strokeDashOffset="1.0" strokeType="OUTSIDE" strokeWidth="0.5" text="Please select an object from timeline to edit its property." textAlignment="CENTER" wrappingWidth="220.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <font>
+      <Font name="Arial Rounded MT Bold" size="20.0" />
+   </font>
+</Text>

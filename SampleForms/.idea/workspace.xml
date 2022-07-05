@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c4e958c-3ab6-4993-8fb8-50266d91530f" name="Changes" comment="" />
+    <list default="true" id="2c4e958c-3ab6-4993-8fb8-50266d91530f" name="Changes" comment="Changes">
+      <change beforePath="$PROJECT_DIR$/../FXML's by SceneBuilder/First.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../FXML's by SceneBuilder/First.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Foo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Foo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LatexPackageSorterAndFormatter/src/main/resources/com/example/latexpackagesorterandformatter/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../LatexPackageSorterAndFormatter/src/main/resources/com/example/latexpackagesorterandformatter/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LatexPackageSorterAndFormatter/target/classes/com/example/latexpackagesorterandformatter/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../LatexPackageSorterAndFormatter/target/classes/com/example/latexpackagesorterandformatter/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LatexPackageSorterAndFormatter/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/../LatexPackageSorterAndFormatter/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleForms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SampleForms.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sampleforms/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sampleforms/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sampleforms/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sampleforms/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sampleforms/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/sampleforms/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/sampleforms/Form1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/sampleforms/Form1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/sampleforms/HelloApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/sampleforms/HelloApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/sampleforms/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/sampleforms/HelloController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/sampleforms/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/sampleforms/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,11 +32,21 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JavaFXApplication" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -34,9 +62,32 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Hp\Documents\JavaFX\SampleForms\src\main\resources\com\example\sampleforms" />
+      <recent name="C:\Users\Hp\Documents\JavaFX\SampleForms\src\main\java\com\example\sampleforms" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.HelloApplication">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Form1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.sampleforms.Form1" />
       <module name="SampleForms" />
@@ -50,8 +101,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Form_with_css" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.sampleforms.Form_with_css" />
+      <module name="SampleForms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.sampleforms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.sampleforms.HelloApplication" />
+      <module name="SampleForms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.sampleforms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HelloApplication" />
+        <item itemvalue="Application.Form_with_css" />
         <item itemvalue="Application.Form1" />
       </list>
     </recent_temporary>
@@ -64,8 +143,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643470387178</updated>
+      <workItem from="1645951429905" duration="1987000" />
+      <workItem from="1645962283496" duration="3291000" />
+      <workItem from="1645977467731" duration="353000" />
+      <workItem from="1645979136456" duration="2809000" />
+      <workItem from="1646035490501" duration="3212000" />
+      <workItem from="1646047196051" duration="1884000" />
+      <workItem from="1646069394748" duration="4361000" />
+      <workItem from="1646239742796" duration="96000" />
+      <workItem from="1646241533800" duration="1340000" />
+      <workItem from="1646582596763" duration="681000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <confirmRemoveEmptyChangelist value="1" />

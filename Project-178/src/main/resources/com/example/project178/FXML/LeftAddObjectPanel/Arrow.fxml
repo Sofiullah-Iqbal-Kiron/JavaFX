@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.Polyline?>
+
+<Polyline fill="CHARTREUSE" points="-50.0, -40.0, 50.0, -40.0, 33.0, 60.0, -50.0, -40.0" strokeType="INSIDE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" />

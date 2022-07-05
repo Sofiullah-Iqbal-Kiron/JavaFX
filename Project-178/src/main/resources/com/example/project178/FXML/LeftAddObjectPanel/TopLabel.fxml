@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+
+
+<Label alignment="CENTER" text="Add Object to Timeline" textAlignment="CENTER" textFill="#2004ee" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <font>
+      <Font name="Microsoft New Tai Lue" size="20.0" />
+   </font>
+</Label>

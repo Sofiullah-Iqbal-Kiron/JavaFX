@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.shape.Rectangle?>
+
+<Rectangle fill="#cad3da" height="20.0" stroke="#0d0d0d" strokeType="INSIDE" strokeWidth="2.0" width="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</Rectangle>

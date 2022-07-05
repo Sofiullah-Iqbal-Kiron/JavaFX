@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.shape.*?>
+
+<Polygon fill="DODGERBLUE" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+    <points>
+        <Double fx:value="0.0" />
+        <Double fx:value="0.0" />
+        <Double fx:value="20.0" />
+        <Double fx:value="0.0" />
+        <Double fx:value="10.0" />
+        <Double fx:value="-17.32051" />
+    </points>
+</Polygon>

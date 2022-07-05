@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<ToggleButton graphicTextGap="10.0" lineSpacing="1.0" mnemonicParsing="false" style="-fx-background-color: #c7f4f9;" text="CircleTimeLineToggleButton" textAlignment="CENTER" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+    <font>
+        <Font name="Consolas Bold" size="20.0" />
+    </font>
+    <padding>
+        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+    </padding>
+   <graphic>
+      <Circle fill="#93a1ae" radius="12.5" stroke="BLACK" strokeMiterLimit="5.0" strokeType="INSIDE" strokeWidth="2.0" />
+   </graphic>
+</ToggleButton>

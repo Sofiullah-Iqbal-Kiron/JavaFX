@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.Polygon?>
+
+
+<Polygon fill="DODGERBLUE" points="23.0, 43.0, 32.0, 43.0, 40.0, 32.0, 32.0, 19.0, 23.0, 19.0, 15.0, 32.0" stroke="BLACK" strokeType="INSIDE" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" />

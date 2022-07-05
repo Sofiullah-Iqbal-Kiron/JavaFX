@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Maven: eu.hansolo:tilesfx:11.48">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/eu/hansolo/tilesfx/11.48/tilesfx-11.48.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../Program Files (x86)/MySQL/Connector J 8.0/mysql-connector-java-8.0.29.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/eu/hansolo/tilesfx/11.48/tilesfx-11.48-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/eu/hansolo/tilesfx/11.48/tilesfx-11.48-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
