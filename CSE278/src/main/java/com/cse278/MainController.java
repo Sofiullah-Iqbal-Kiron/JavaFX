@@ -49,7 +49,8 @@ public class MainController {
     private TextField fromCountry, fromDivision, fromDistrict, fromThana, fromPostCode, fromOtherDetails, toCountry, toDivision, toDistrict, toThana, toPostCode, toOtherDetails;
 
     @FXML
-    private ComboBox<String> fromCountryComboBox, toCountryComboBox;
+    private ComboBox<String> fromCountryComboBox, fromDivisionComboBox, fromDistrictComboBox, fromThanaComboBox,
+            toCountryComboBox, toDivisionComboBox, toDistrictComboBox, toThanaComboBox;
 
     @FXML
     protected void printMemo() {
@@ -81,10 +82,47 @@ public class MainController {
 
         setoidValue();
         addValuesInCountryComboBox();
+        addValuesInDistrictComboBox();
+        addValuesInThanaComboBox();
         setDateOfIssueValue();
         setEstimatedDeliveryTime();
 
         newOrderForm.setVisible(true);
+    }
+
+    @FXML
+    protected void fromCountrySelected() {
+        if (fromCountryComboBox.getSelectionModel().getSelectedItem() == "Bangladesh") {
+            addValuesInFromDivisionComboBox();
+            fromDivisionComboBox.setDisable(false);
+        } else fromDivisionComboBox.setDisable(true);
+    }
+
+    @FXML
+    protected void fromDivisionComboBoxSelected() {
+        String division = fromDivisionComboBox.getSelectionModel().getSelectedItem();
+        switch (division) {
+            case "Barisal":
+                ObservableList<String> districtsInBarisal =
+                        FXCollections.observableArrayList("Barisal", "Barguna", "Bhola", "Jhalokati", "Patuakhali", "Pirojpur");
+                fromDistrictComboBox.setItems(districtsInBarisal);
+                break;
+            case "Chittagong":
+                ObservableList<String> districtsInChittagong =
+                        FXCollections.observableArrayList("Brahmanbaria", "Comilla", "Chandpur", "Lakshmipur", "Noakhali", "Feni", "Khagrachhari", "Rangamati", "Bandarban", "Chittagong", "Cox's Bazar");
+                fromDistrictComboBox.setItems(districtsInChittagong);
+                break;
+            case "Dhaka":
+                ObservableList<String> districtsInDhaka =
+                        FXCollections.observableArrayList("Dhaka", "Gazipur");
+                fromDistrictComboBox.setItems(districtsInDhaka);
+                break;
+        }
+        fromDistrictComboBox.setDisable(false);
+        fromDistrictComboBox.getSelectionModel().selectFirst();
+        fromDistrictComboBox.setVisibleRowCount(3);
+        fromDistrictComboBox.setEditable(true);
+        fromDistrictComboBox.setPromptText("Hey prompt here");
     }
 
     private void setoidValue() {
@@ -95,9 +133,29 @@ public class MainController {
 
     private void addValuesInCountryComboBox() {
 //        fromCountryComboBox, toCountryComboBox
-        ObservableList<String> country = FXCollections.observableArrayList(new String[]{"Bangladesh", "India"});
+        ObservableList<String> country = FXCollections.observableArrayList("Bangladesh", "India");
         fromCountryComboBox.setItems(country);
         toCountryComboBox.setItems(country);
+    }
+
+    private void addValuesInFromDivisionComboBox() {
+//        fromDivisionComboBox
+        ObservableList<String> division = FXCollections.observableArrayList("Barisal", "Chittagong", "Dhaka", "Khulna", "Mymensingh", "Rajshahi", "Rangpur", "Sylhet");
+        fromDivisionComboBox.setItems(division);
+    }
+
+    private void addValuesInDistrictComboBox() {
+//        fromDistrictComboBox, toDistrictComboBox
+        ObservableList<String>
+                districtsInKhulna = FXCollections.observableArrayList(),
+                districtsInMymensingh = FXCollections.observableArrayList(),
+                districtsInRajshahi = FXCollections.observableArrayList(),
+                districtsInRangpur = FXCollections.observableArrayList(),
+                districtsInSylhet = FXCollections.observableArrayList("Habiganj", "Moulvibazar", "Sunamganj", "Sylhet");
+    }
+
+    private void addValuesInThanaComboBox() {
+//        fromThanaComboBox, toThanaComboBox
     }
 
     private void setDateOfIssueValue() {

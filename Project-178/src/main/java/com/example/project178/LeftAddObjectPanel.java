@@ -7,6 +7,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.shape.*;
 
@@ -48,19 +49,16 @@ public class LeftAddObjectPanel extends VBox {
         Polygon PolygonIcon = new FXMLLoader(getClass().getResource("FXML/LeftAddObjectPanel/Polygon.fxml")).load();
         addPolygon.setGraphic(PolygonIcon);
 
-        String arrowURL = iconDirURL + "arrow.png";
-        ImageView ArrowIcon = new ImageView(new Image(arrowURL));
-        ArrowIcon.setFitWidth(20);
-        ArrowIcon.setFitHeight(20);
-        Button addArrow = new Button("Arrow", ArrowIcon);
-        //        Shape ArrowIcon = new FXMLLoader(getClass().getResource("FXML/LeftAddObjectPanel/Arrow.fxml")).load();
-        //        addArrow.setGraphic(ArrowIcon);
+        Button addArrow = new Button("Arrow");
+        HBox ArrowIcon = new FXMLLoader(getClass().getResource("FXML/LeftAddObjectPanel/Arrow.fxml")).load();
+        ArrowIcon.setMaxSize(15, 15);
+        addArrow.setGraphic(ArrowIcon);
 
         Button addText = new Button("Text");
         Shape TextIcon = new FXMLLoader(getClass().getResource("FXML/LeftAddObjectPanel/Text.fxml")).load();
         addText.setGraphic(TextIcon);
 
-        Button addMathText = new Button("Mathematical Text");
+        Button addMathText = new Button("MathText");
         Shape MathTextIcon = new FXMLLoader(getClass().getResource("FXML/LeftAddObjectPanel/MathText.fxml")).load();
         addMathText.setGraphic(MathTextIcon);
 
@@ -68,7 +66,7 @@ public class LeftAddObjectPanel extends VBox {
 
         //        Configuring addButtonsHolder.
         addButtonsHolder.setSpacing(6);
-        addButtonsHolder.setPadding(new Insets(10));
+        addButtonsHolder.setPadding(new Insets(5));
         addButtonsHolder.setId("AddButtonsHolder");
         addButtonsHolder.getStylesheets().add(getClass().getResource("StyleSheet/AddObjectPanel.css").toExternalForm());
 

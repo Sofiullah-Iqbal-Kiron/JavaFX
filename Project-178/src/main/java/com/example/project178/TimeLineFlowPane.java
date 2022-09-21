@@ -12,7 +12,7 @@ public class TimeLineFlowPane {
     public FlowPane theTimeLineFlowPane = new FXMLLoader(getClass().getResource("FXML/TimeLineFlowPane.fxml")).load();
 
     public TimeLineFlowPane() throws IOException {
-        this.theTimeLineFlowPane.setHgap(10);
+        this.theTimeLineFlowPane.setHgap(8);
         this.theTimeLineFlowPane.setPrefSize(BottomPanel.WIDTH, BottomPanel.HEIGHT);
     }
 }

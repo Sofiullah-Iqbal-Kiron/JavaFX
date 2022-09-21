@@ -18,7 +18,7 @@
 
 <StackPane fx:id="mainStackPane" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cse278.MainController">
     <children>
-        <HBox fx:id="welcomePage" alignment="CENTER" spacing="10.0">
+        <HBox fx:id="welcomePage" alignment="CENTER" spacing="10.0" visible="false">
             <children>
                 <Button fx:id="trackYourOrderButton" alignment="CENTER" mnemonicParsing="false" text="Track Your Order">
                     <cursor>
@@ -44,7 +44,7 @@
                 </Button>
             </children>
         </HBox>
-        <VBox fx:id="newOrderForm" alignment="CENTER" spacing="6.0" visible="false">
+        <VBox fx:id="newOrderForm" alignment="CENTER" spacing="6.0">
             <children>
                 <HBox alignment="TOP_CENTER" prefHeight="20.0" spacing="8.0">
                     <children>
@@ -167,12 +167,12 @@
                                                 <Font size="14.0" />
                                             </font>
                                         </Text>
-                                        <TextField fx:id="fromDivision" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                                        <TextField fx:id="fromDistrict" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                                        <TextField fx:id="fromThana" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                                         <TextField fx:id="fromPostCode" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                                         <TextField fx:id="fromOtherDetails" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                                        <ComboBox fx:id="fromCountryComboBox" prefHeight="50.0" prefWidth="183.0" promptText="Select Country" GridPane.columnIndex="1" />
+                                        <ComboBox fx:id="fromCountryComboBox" onAction="#fromCountrySelected" prefHeight="50.0" prefWidth="183.0" promptText="Select Country" GridPane.columnIndex="1" />
+                              <ComboBox fx:id="fromDivisionComboBox" disable="true" onAction="#fromDivisionComboBoxSelected" prefHeight="30.0" prefWidth="225.0" promptText="Select Division" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <ComboBox fx:id="fromDistrictComboBox" disable="true" prefHeight="30.0" prefWidth="246.0" promptText="Select District" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <ComboBox fx:id="fromThanaComboBox" disable="true" prefHeight="30.0" prefWidth="225.0" promptText="Select Thana" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                                     </children>
                                     <VBox.margin>
                                         <Insets />
@@ -290,12 +290,12 @@
                                                 <Font size="14.0" />
                                             </font>
                                         </Text>
-                                        <TextField fx:id="toDivision" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                                        <TextField fx:id="toDistrict" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                                        <TextField fx:id="toThana" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                                         <TextField fx:id="toPostCode" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                                         <TextField fx:id="toOtherDetails" GridPane.columnIndex="1" GridPane.rowIndex="5" />
                                         <ComboBox fx:id="toCountryComboBox" prefHeight="30.0" prefWidth="213.0" promptText="Select Country" GridPane.columnIndex="1" />
+                              <ComboBox fx:id="toDivisionComboBox" disable="true" prefHeight="30.0" prefWidth="205.0" promptText="Select Division" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <ComboBox fx:id="toDistrictComboBox" disable="true" prefHeight="30.0" prefWidth="202.0" promptText="Select District" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <ComboBox fx:id="toThanaComboBox" disable="true" prefHeight="30.0" prefWidth="199.0" promptText="Select Thana" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                                     </children>
                                 </GridPane>
                             </children>

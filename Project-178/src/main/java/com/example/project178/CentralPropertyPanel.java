@@ -9,7 +9,7 @@ import javafx.scene.layout.*;
 
 import java.io.IOException;
 
-public class CentralPropertyPanel extends FlowPane {
+public class CentralPropertyPanel extends VBox {
     public CentralPropertyPanel() throws IOException {
         Label caption = new FXMLLoader(getClass().getResource("FXML/CentralPropertyPanel/Caption.fxml")).load();
         caption.setAlignment(Pos.TOP_CENTER);
@@ -19,8 +19,9 @@ public class CentralPropertyPanel extends FlowPane {
         propertyOptionsHolder.setPrefSize(caption.getMaxWidth(), 200);
         propertyOptionsHolder.setMaxSize(caption.getMaxWidth(), 210);
 
-        this.setOrientation(Orientation.VERTICAL);
+//        this.setOrientation(Orientation.VERTICAL);
         this.setAlignment(Pos.TOP_CENTER);
+        this.setSpacing(5);
         this.getChildren().addAll(caption, propertyOptionsHolder);
     }
 }

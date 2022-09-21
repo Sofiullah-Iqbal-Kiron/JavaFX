@@ -3,9 +3,8 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.text.Font?>
 
-
-<Label contentDisplay="CENTER" ellipsisString="" style="-fx-background-color: skyblue; -fx-padding: 4px 10px;" text="Property Panel" underline="true" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<Label alignment="CENTER" contentDisplay="CENTER" ellipsisString="" style="-fx-background-color: skyblue; -fx-padding: 4px 10px;" text="Property Panel" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <font>
-      <Font name="Candara Bold Italic" size="20.0" />
+      <Font name="Candara Bold" size="20.0" />
    </font>
 </Label>

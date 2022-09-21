@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="CENTER" hgap="10.0" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-border-color: blue; -fx-border-radius: 0pt;" vgap="10.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+    <columnConstraints>
+        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="145.0" />
+        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="20.0" prefWidth="150.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="35.0" valignment="CENTER" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="MathTeX (tex form):">
+            <font>
+                <Font name="Arial Bold" size="15.0" />
+            </font>
+        </Text>
+        <TextField id="mathtex" fx:id="mathtex" alignment="CENTER" prefHeight="45.0" prefWidth="150.0" GridPane.columnIndex="1">
+            <font>
+                <Font name="Lucida Console" size="13.0" />
+            </font>
+        </TextField>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fill opacity:" GridPane.rowIndex="1">
+            <font>
+                <Font name="Arial Bold" size="15.0" />
+            </font>
+        </Text>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Color:" GridPane.rowIndex="2">
+            <font>
+                <Font name="Arial Bold" size="15.0" />
+            </font>
+        </Text>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Font size:" GridPane.rowIndex="3">
+            <font>
+                <Font name="Arial Bold" size="15.0" />
+            </font>
+        </Text>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Width: " GridPane.rowIndex="4">
+            <font>
+                <Font name="Arial Bold" size="15.0" />
+            </font>
+        </Text>
+        <Slider id="fill_opacity" fx:id="fill_opacity" blockIncrement="0.5" majorTickUnit="1.0" max="1.0" minorTickCount="1" prefHeight="19.0" prefWidth="150.0" showTickLabels="true" showTickMarks="true" style="-fx-background-color: white;" value="1.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <ColorPicker id="color" fx:id="color" prefHeight="49.0" prefWidth="166.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <ComboBox id="font_size" fx:id="font_size" editable="true" prefHeight="64.0" prefWidth="166.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <ComboBox id="width" fx:id="width" editable="true" prefHeight="62.0" prefWidth="166.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <Button id="render" fx:id="render" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" prefHeight="9.0" prefWidth="305.0" style="-fx-border-width: 1pt; -fx-border-color: black; -fx-border-radius: 3pt;" text="Render" textFill="#055b0e" GridPane.columnSpan="2" GridPane.rowIndex="5">
+            <font>
+                <Font name="Lucida Sans Demibold Italic" size="20.0" />
+            </font>
+        </Button>
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="5.0" right="5.0" top="5.0" />
+    </padding>
+</GridPane>

@@ -1,11 +1,7 @@
 package com.example.project178;
 
-import com.example.PropertyOptionsHolder.CirclePropertyOptionsHolder;
-import com.example.PropertyOptionsHolder.SquarePropertyOptionsHolder;
-import com.example.PropertyOptionsHolder.TrianglePropertyOptionsHolder;
-import com.example.TimeLineToggleButton.CircleTimeLineToggleButton;
-import com.example.TimeLineToggleButton.SquareTimeLineToggleButton;
-import com.example.TimeLineToggleButton.TriangleTimeLineToggleButton;
+import com.example.PropertyOptionsHolder.*;
+import com.example.TimeLineToggleButton.*;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
@@ -59,7 +55,7 @@ public class Main extends Application {
         VBox bottomPanel = new BottomPanel().theBottomPanel;
         FlowPane timeLineFlowPane = new TimeLineFlowPane().theTimeLineFlowPane;
         TextArea manimTerminal = new ManimTerminal().theManimTerminal;
-        bottomPanel.getChildren().addAll(timeLineFlowPane, manimTerminal); // timeLineFlowPane, manimTerminal
+        bottomPanel.getChildren().addAll(timeLineFlowPane); // timeLineFlowPane, manimTerminal
 
         //        Center: centralPropertyPanel with while noObjectSelectedFromTimeLine message.
         CentralPropertyPanel centralPropertyPanel = new CentralPropertyPanel();
@@ -98,6 +94,7 @@ public class Main extends Application {
                     for(int i = 0; i < len; i++) {
                         nameOfTogglesInBottomTimeLineHBox[i] = (ToggleButton)togglesInBottomTimeLineFlowPane.get(i).getText();
                     }*/
+                    Label propertyLabel = (Label) centralPropertyPanel.getChildren().get(0);
                     boolean uniqueObjectNameInserted = objectsName.add(currentObjectName);
                     if (!Objects.equals(currentObjectName, "") && uniqueObjectNameInserted) {
                         switch (currentObjectClass) {
@@ -112,6 +109,7 @@ public class Main extends Application {
                                     // If selected then unselect and if nothing is selected in the togglegroup then setLabel of centralpropertypanel "no object selected."
                                     // Set changeListener instead of setOnAction.
                                     tSquare.setOnAction(action -> {
+                                        propertyLabel.setText("Square Property Options");
                                         centralPropertyPanel.getChildren().set(1, new SquarePropertyOptionsHolder(currentObjectName, writer, manimTerminal));
                                         stage.sizeToScene();
                                     });
@@ -126,7 +124,12 @@ public class Main extends Application {
                                     tCircle.setToggleGroup(toggleGroupAtBottomTimeLineFlowPane);
                                     timeLineFlowPane.getChildren().add(tCircle);
                                     tCircle.setOnAction(action -> {
-                                        centralPropertyPanel.getChildren().set(1, new CirclePropertyOptionsHolder(currentObjectName, writer, timeLineFlowPane));
+                                        propertyLabel.setText("Circle Property Options");
+                                        try {
+                                            centralPropertyPanel.getChildren().set(1, new CirclePropertyOptionsHolder(currentObjectName, writer, timeLineFlowPane).theCirclePropertyOptionsHolder);
+                                        } catch (IOException ex) {
+                                            throw new RuntimeException(ex);
+                                        }
                                         stage.sizeToScene();
                                     });
                                 } catch (Exception ex) {
@@ -140,7 +143,46 @@ public class Main extends Application {
                                     tTriangle.setToggleGroup(toggleGroupAtBottomTimeLineFlowPane);
                                     timeLineFlowPane.getChildren().add(tTriangle);
                                     tTriangle.setOnAction(action -> {
+                                        propertyLabel.setText("Triangle Property Options");
                                         centralPropertyPanel.getChildren().set(1, new TrianglePropertyOptionsHolder());
+                                        stage.sizeToScene();
+                                    });
+                                } catch (Exception ex) {
+                                    ex.printStackTrace();
+                                }
+                                break;
+                            case "Text":
+                                try {
+                                    ToggleButton tText = new TextTimeLineToggleButton(currentObjectName).theButton;
+                                    tText.setAccessibleText(currentObjectName);
+                                    tText.setToggleGroup(toggleGroupAtBottomTimeLineFlowPane);
+                                    timeLineFlowPane.getChildren().add(tText);
+                                    tText.setOnAction(action -> {
+                                        propertyLabel.setText("Text Property Options");
+                                        try {
+                                            centralPropertyPanel.getChildren().set(1, new TextPropertyOptionsHolder(currentObjectName, writer, manimTerminal).theTextPropertyOptionsHolder);
+                                        } catch (IOException ex) {
+                                            throw new RuntimeException(ex);
+                                        }
+                                        stage.sizeToScene();
+                                    });
+                                } catch (Exception ex) {
+                                    ex.printStackTrace();
+                                }
+                                break;
+                            case "MathText":
+                                try {
+                                    ToggleButton tMathText = new MathTextTimeLineToggleButton(currentObjectName).theButton;
+                                    tMathText.setAccessibleText(currentObjectName);
+                                    tMathText.setToggleGroup(toggleGroupAtBottomTimeLineFlowPane);
+                                    timeLineFlowPane.getChildren().add(tMathText);
+                                    tMathText.setOnAction(action -> {
+                                        propertyLabel.setText("MathText Property Options");
+                                        try {
+                                            centralPropertyPanel.getChildren().set(1, new MathTextPropertyOptionsHolder(currentObjectName, writer, manimTerminal).theMathTextPropertyOptionsHolder);
+                                        } catch (IOException ex) {
+                                            throw new RuntimeException(ex);
+                                        }
                                         stage.sizeToScene();
                                     });
                                 } catch (Exception ex) {
@@ -182,7 +224,7 @@ public class Main extends Application {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main() {
         launch();
     }
 }

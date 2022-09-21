@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.shape.Polyline?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
 
-<Polyline fill="CHARTREUSE" points="-50.0, -40.0, 50.0, -40.0, 33.0, 60.0, -50.0, -40.0" strokeType="INSIDE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" />
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="15.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Line endX="153.2928924560547" endY="180.2928924560547" fill="BLACK" startX="140.2928924560547" startY="180.2928924560547" strokeLineJoin="BEVEL" strokeWidth="8.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Line>
+      <Polygon points="-17.0, 47.5, 3.5, 62.5, -17.0, 77.5" stroke="BLACK" strokeWidth="0.0" />
+   </children>
+</HBox>

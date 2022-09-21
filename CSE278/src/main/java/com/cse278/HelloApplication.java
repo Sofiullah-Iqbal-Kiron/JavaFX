@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ComboBox;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
@@ -16,6 +17,8 @@ public class HelloApplication extends Application {
     public void start(Stage stage) throws IOException {
         Parent root = new FXMLLoader(getClass().getResource("Main.fxml")).load();
         Scene scene = new Scene(root);
+
+        ComboBox<String> box=new ComboBox<>();
 
 //        Setting stage, the main top level container.
         stage.setScene(scene);

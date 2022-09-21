@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.FlowPane?>
 
 
-<FlowPane hgap="10.0" prefHeight="100.0" prefWidth="400.0" style="-fx-background-color: lightgray; -fx-border-width: 3px; -fx-border-color: green;" vgap="10.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" />
+<FlowPane alignment="TOP_CENTER" hgap="10.0" prefHeight="100.0" prefWidth="400.0" style="-fx-border-width: 1px; -fx-border-color: green;" vgap="10.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</FlowPane>

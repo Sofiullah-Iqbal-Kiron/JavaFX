@@ -13,4 +13,9 @@
       <module name="Project-178" target="17" />
     </bytecodeTargetLevel>
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Project-178" options="" />
+    </option>
+  </component>
 </project>
