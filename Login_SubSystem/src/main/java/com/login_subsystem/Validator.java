@@ -1,22 +1,19 @@
 package com.login_subsystem;
 
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
 public class Validator {
-    private final static String databaseConnectionURL = "jdbc:mysql://127.0.0.1:3306/project278";
-    private final static String databaseUser = "root";
-    private final static String databasePassword = "first92992%sqlme8*:";
-
     protected static boolean isValidCredentials(String username, String password) {
         try {
 //            Load the jdbc driver which will mediate between database and my java program.
             Class.forName("com.mysql.cj.jdbc.Driver");
 
 //            Get connected with database.
-            Connection connection = DriverManager.getConnection(databaseConnectionURL, databaseUser, databasePassword);
+            Connection connection = DriverManager.getConnection(DataBaseInfo.getConnectionURL(), DataBaseInfo.getUserName(), DataBaseInfo.getPassword());
 
 //            Create a statement.
             Statement statement = connection.createStatement();
