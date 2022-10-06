@@ -1,7 +1,9 @@
 // JFX icon issues: https://kordamp.org/ikonli/#_coreui
+// Or we can add this library when creating any jfx project at intellij idea.
 
 package com.login_subsystem;
 
+import io.github.palexdev.materialfx.controls.MFXToggleButton;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -29,9 +31,20 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         firstStage = stage;
-        VBox home_VBox = new FXMLLoader(getClass().getResource("home_VBox.fxml")).load();
+
+        String basic_home_VBox = "home_Vbox.fxml";
+        String material_home_VBox = "home_VBox_material.fxml";
+        VBox home_VBox = new FXMLLoader(getClass().getResource(material_home_VBox)).load();
+
         notifier = new Notifier("Hello, World!");
         home_scene = new Scene(home_VBox);
+
+//        Setting amazon for stage using ikonli.
+//        This FontIcon is subclass of Text which is also subclass of Node. So we can use this as like we use Node.
+        /*FontIcon amazon = new FontIcon("cib-amazon:20:RED");
+        FontIcon git = new FontIcon("cib-git:20:GREEN");
+        home_VBox.getChildren().add(amazon);
+        home_VBox.getChildren().add(git);*/
 
         stage.setTitle("User Authenticator");
         stage.setScene(home_scene);

@@ -7,6 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import org.controlsfx.control.Notifications;
 
 import java.io.IOException;
 
@@ -36,8 +37,14 @@ public class MainController {
     @FXML
     protected void checkCredentials() {
         Main.currentLoginData = new LoginData(username_textfield.getText().strip().toLowerCase(), password_passwordfield.getText().strip());
-        System.out.println(Validator.isValidCredentials(Main.currentLoginData.getUsername(), Main.currentLoginData.getPassword()) ? "User Authenticated." : "Invalid credentials!\nMay be username or password is wrong.");
+//        System.out.println(Validator.isValidCredentials(Main.currentLoginData.getUsername(), Main.currentLoginData.getPassword()) ? "User Authenticated." : "Invalid credentials!\nMay be username or password is wrong.");
 //        Is valid, then bring a dialog pane of "OK". This DialogPane is of Main.
+        String message;
+        if (Validator.isValidCredentials(Main.currentLoginData.getUsername(), Main.currentLoginData.getPassword()))
+            message = "User Authenticated.";
+        else message = "Invalid credentials!\nMay be username or password is wrong.";
+        Notifications notifications = Notifications.create().title("from \"User Authenticator\"").text(message).darkStyle();
+        notifications.showInformation();
     }
 
     @FXML
